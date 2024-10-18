@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFE</title>
+    <script>
+        function mostrarCodigoTecla(event) {
+            // Obtiene el código de la tecla presionada
+            var codigoTecla = event.keyCode || event.which;
+            alert('Código de la tecla presionada: ' + codigoTecla);
+        }
+        function mostrarMensajeTeclas() {
+            alert('¡Botón activado!');
+        }
+        function mostrarCaracter(event) {
+            // Obtiene el carácter presionado
+            var caracter = String.fromCharCode(event.charCode);
+            // Actualiza el contenido del párrafo con el carácter presionado
+            document.getElementById('caracterMostrado').textContent = 'Carácter presionado: ' + caracter;
+        }
+    </script>
+</head>
+<body>
+    <body>
+        <form>
+            <label for="entrada">Escribe algo:</label>
+            <input type="text" id="entrada" size="30" name="entrada" placeholder="onkeydown cuando se ejecuta una tecla"
+                onkeydown="mostrarCodigoTecla(event)">
+
+            <p>Presiona <kbd>Alt</kbd> + <kbd>B</kbd> para activar el botón.</p>
+            <button accesskey="b" onclick="mostrarMensajeTeclas()">Haz clic en mí o presiona Alt+B</button>
+            <br>
+            <br>
+
+            <label for="entrada">Escribe algo:</label>
+            <input type="text" id="entrada" name="entrada" size="30" placeholder="onkeypress pulsa y se despulsa tecla"
+                onkeypress="mostrarCaracter(event)">
+            <p id="caracterMostrado">Carácter presionado: </p>
+        </form>
+    </body>
+</html>
