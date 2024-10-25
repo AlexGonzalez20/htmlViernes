@@ -1,0 +1,50 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: green;
+}
+
+nav {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: cornflowerblue;
+}
+
+section {
+    position: absolute;
+    top: 20%;
+    background-color: blue;
+    width: 20%;
+    left: 0;
+    height: 70%;
+}
+
+main {
+    position: absolute;
+    background-color: gray;
+    top: 20%;
+    right: 0;
+    width: 80%;
+    height: 70%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: orange;
+
+
+}
+
+* {
+    color: aliceblue;
+}

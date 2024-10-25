@@ -1,0 +1,59 @@
+#contenedor1 {
+    position: absolute;
+    background-color: cornflowerblue;
+    left: 0;
+    top: 0;
+    width: 20%;
+    border: 4px solid black;
+    height: 75%;
+}
+
+#contenedor2 {
+    position: absolute;
+    background-color: cornflowerblue;
+    left: 20%;
+    top: 0;
+    width: 20%;
+    height: 75%;
+    border: 4px solid black;
+}
+
+#contenedor3 {
+    position: absolute;
+    background-color: orange;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    width: 40%;
+    border: 4px solid black;
+}
+
+#contenedor4 {
+    position: absolute;
+    background-color: blueviolet;
+    left: 40%;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    border: 4px solid black;
+}
+
+#contenedor5 {
+    position: absolute;
+    background-color: firebrick;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 75%;
+    border: 4px solid black;
+}
+
+#contenedor6 {
+    position: absolute;
+    background-color: orange;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 25%;
+    border: 4px solid black;
+}
